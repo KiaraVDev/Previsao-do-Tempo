@@ -7,23 +7,25 @@
 body {
   font-family: "JetBrains Mono", monospace;
   background-image: url("/src/assets/Wallpaper.png");
-  background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
-  background-repeat: no-repeat; /* Impede a repetição da imagem */
-  background-position: center; /* Centraliza a imagem */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; 
+  background-attachment: fixed; 
   color: #f0e9e9;
   line-height: 1.6;
+  min-height: 100vh; 
 }
 
-/* Media Queries para Responsividade */
+
 @media (max-width: 768px) {
   body {
-    background-size: contain; /* Ajusta a imagem para caber dentro do container em telas menores */
+    background-size: cover; 
   }
 }
 
 @media (max-width: 480px) {
   body {
-    background-size: contain; /* Ajusta a imagem para caber dentro do container em telas menores */
-    background-attachment: scroll; /* Ajusta o comportamento do background ao rolar a página em telas menores */
+    background-size: cover; 
+    background-attachment: scroll; 
   }
 }

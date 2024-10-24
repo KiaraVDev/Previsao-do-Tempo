@@ -12,7 +12,7 @@ h2 {
 
 .weather-infos {
     display: flex;
-    flex-direction: column; /* Ajuste para empilhar em telas menores */
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
 }
@@ -36,7 +36,7 @@ h2 {
 
 .details {
     display: flex;
-    flex-direction: column; /* Ajuste para empilhar em telas menores */
+    flex-direction: column; 
     justify-content: space-around;
     align-items: center;
     color: aliceblue;
@@ -44,10 +44,10 @@ h2 {
 
 @media (min-width: 768px) {
     .weather-infos {
-        flex-direction: row; /* Ajuste para lado a lado em telas maiores */
+        flex-direction: row; 
     }
 
     .details {
-        flex-direction: row; /* Ajuste para lado a lado em telas maiores */
+        flex-direction: row; 
     }
 }
