@@ -1,15 +1,29 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: "JetBrains Mono", monospace;
-  /* background: linear-gradient(to right, #00b4bd, #0083b0); */
   background-image: url("/src/assets/Wallpaper.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+  background-repeat: no-repeat; /* Impede a repetição da imagem */
+  background-position: center; /* Centraliza a imagem */
   color: #f0e9e9;
   line-height: 1.6;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  body {
+    background-size: contain; /* Ajusta a imagem para caber dentro do container em telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-size: contain; /* Ajusta a imagem para caber dentro do container em telas menores */
+    background-attachment: scroll; /* Ajusta o comportamento do background ao rolar a página em telas menores */
+  }
 }

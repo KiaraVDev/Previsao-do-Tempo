@@ -1,23 +1,25 @@
-.container{
+.container {
   max-width: 1000px;
   padding: 20px;
   margin: 0 auto;
   text-align: center;
+  animation: float 5s ease-in-out infinite;
 }
 
-.text-01{
+.text-01 {
   font-size: 3rem;
-    background: linear-gradient(to right, #0ea5e9, #16a34a); /* Define o gradiente de cores */
-    -webkit-background-clip: text; /* Aplica o background ao texto (compatível com Webkit) */
-    -webkit-text-fill-color: transparent; /* Faz o texto ficar transparente */
-    background-clip: text; /* Aplica o background ao texto */
-    text-fill-color: transparent; /* Faz o texto ficar transparente */
-
+  background: linear-gradient(to right, #0ea5e9, #16a34a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
-h1{
+
+h1 {
   color: #fffefe;
 }
-input{
+
+input {
   padding: 10px;
   border-radius: 20px 0px 0 20px;
   border: none;
@@ -27,7 +29,7 @@ input{
   margin-top: 30px;
 }
 
-button{
+button {
   background-color: #378bda;
   border: 0;
   border-radius: 0 20px 20px 0;
@@ -37,7 +39,7 @@ button{
   font-weight: bold;
 }
 
-button:hover{
+button:hover {
   background-color: #0561ac;
 }
 
@@ -50,9 +52,36 @@ button:hover{
   }
   100% {
     transform: translateY(0);
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  .text-01 {
+    font-size: 2.5rem;
+  }
+  
+  input {
+    width: 80%;
+    max-width: 200px;
+  }
+
+  button {
+    padding: 8px;
   }
 }
 
-.container {
-  animation: float 5s ease-in-out infinite;
+@media (max-width: 480px) {
+  .text-01 {
+    font-size: 2rem;
+  }
+  
+  input {
+    width: 100%;
+    max-width: none;
+  }
+  
+  button {
+    width: 100%;
+    border-radius: 0 0 20px 20px; /* Ajusta a borda para caber bem no layout */
+  }
 }

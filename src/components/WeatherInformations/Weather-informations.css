@@ -5,36 +5,49 @@
     margin: 20px 0;
 }
 
-
-h2{
+h2 {
     font-size: 2rem;
     color: aliceblue;
 }
 
-.weather-infos{
+.weather-infos {
     display: flex;
+    flex-direction: column; /* Ajuste para empilhar em telas menores */
     align-items: center;
     justify-content: center;
-    img{
-        width: 100px;
-    }
 }
 
-.temperature{
+.weather-infos img {
+    width: 100px;
+}
+
+.temperature {
     font-weight: bold;
     color: aliceblue;
     font-size: 2.5rem;
 }
 
-.description{
+.description {
     text-transform: capitalize;
     font-size: 1.3rem;
     margin-bottom: 10px;
     color: aliceblue;
 }
 
-.details{
+.details {
     display: flex;
+    flex-direction: column; /* Ajuste para empilhar em telas menores */
     justify-content: space-around;
+    align-items: center;
     color: aliceblue;
+}
+
+@media (min-width: 768px) {
+    .weather-infos {
+        flex-direction: row; /* Ajuste para lado a lado em telas maiores */
+    }
+
+    .details {
+        flex-direction: row; /* Ajuste para lado a lado em telas maiores */
+    }
 }
