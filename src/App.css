@@ -1,0 +1,58 @@
+.container{
+  max-width: 1000px;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.text-01{
+  font-size: 3rem;
+    background: linear-gradient(to right, #0ea5e9, #16a34a); /* Define o gradiente de cores */
+    -webkit-background-clip: text; /* Aplica o background ao texto (compatível com Webkit) */
+    -webkit-text-fill-color: transparent; /* Faz o texto ficar transparente */
+    background-clip: text; /* Aplica o background ao texto */
+    text-fill-color: transparent; /* Faz o texto ficar transparente */
+
+}
+h1{
+  color: #fffefe;
+}
+input{
+  padding: 10px;
+  border-radius: 20px 0px 0 20px;
+  border: none;
+  width: 60%;
+  max-width: 300px;
+  outline: none;
+  margin-top: 30px;
+}
+
+button{
+  background-color: #378bda;
+  border: 0;
+  border-radius: 0 20px 20px 0;
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+}
+
+button:hover{
+  background-color: #0561ac;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.container {
+  animation: float 5s ease-in-out infinite;
+}
